@@ -1,0 +1,15 @@
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\SnakeAndLadder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\SnakeAndLadder.AssemblyInfoInputs.cache
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\SnakeAndLadder.AssemblyInfo.cs
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\SnakeAndLadder.csproj.CoreCompileInputs.cache
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\SnakeAndLadder.sourcelink.json
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\bin\Debug\net9.0\SnakeAndLadder.exe
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\bin\Debug\net9.0\SnakeAndLadder.deps.json
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\bin\Debug\net9.0\SnakeAndLadder.runtimeconfig.json
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\bin\Debug\net9.0\SnakeAndLadder.dll
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\bin\Debug\net9.0\SnakeAndLadder.pdb
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\SnakeAndLadder.dll
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\refint\SnakeAndLadder.dll
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\SnakeAndLadder.pdb
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\SnakeAndLadder.genruntimeconfig.cache
+C:\Users\z004unwj\Documents\TinkeringHub\SK Repo\LLD-Problems\snakeandladder\obj\Debug\net9.0\ref\SnakeAndLadder.dll
