@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\z004unwj\\Documents\\Personal\\SK Repo\\LLD-Problems\\TicTacToe\\TicTacToe.csproj",
+      "projectUniqueName": "C:\\Users\\z004unwj\\Documents\\TinkeringHub\\SK Repo\\LLD-Problems\\TicTacToe\\TicTacToe.csproj",
       "projectName": "TicTacToe",
-      "projectPath": "C:\\Users\\z004unwj\\Documents\\Personal\\SK Repo\\LLD-Problems\\TicTacToe\\TicTacToe.csproj",
+      "projectPath": "C:\\Users\\z004unwj\\Documents\\TinkeringHub\\SK Repo\\LLD-Problems\\TicTacToe\\TicTacToe.csproj",
       "packagesPath": "C:\\Users\\z004unwj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\z004unwj\\Documents\\Personal\\SK Repo\\LLD-Problems\\TicTacToe\\obj\\",
+      "outputPath": "C:\\Users\\z004unwj\\Documents\\TinkeringHub\\SK Repo\\LLD-Problems\\TicTacToe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -34,7 +34,8 @@
       "sources": {
         "C:\\Program Files\\dotnet\\library-packs": {},
         "D:\\LocalNugets": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://jfrogplatform.wsa.com/artifactory/api/nuget/v3/nuget-with-azure-nexus": {}
       },
       "frameworks": {
         "net9.0": {
@@ -73,7 +74,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
