@@ -87,6 +87,82 @@ The system is designed with **extensibility, modularity, and clean architecture 
   * Default implementation (linear scan for nearest available spot)
 
 ---
+## 📊 UML Class Diagram
+
+```mermaid
+classDiagram
+
+class ParkingLot {
+    -List~Floor~ floors
+    -Map~int, Ticket~ activeTickets
+    -ISpotAllocationStrategy strategy
+    +ParkVehicle(Vehicle)
+    +UnparkVehicle(int)
+    +GetTicket(int)
+}
+
+class Floor {
+    -int floorNumber
+    -List~ParkingSpot~ spots
+}
+
+class ParkingSpot {
+    -int id
+    -bool isOccupied
+    -VehicleType type
+    +OccupySpot(Vehicle)
+    +VacateSpot()
+    +IsAvailable()
+}
+
+class Vehicle {
+    -string licensePlate
+    -VehicleType type
+}
+
+class Ticket {
+    +int Id
+    +Vehicle Vehicle
+    +DateTime EntryTime
+    +ParkingSpot ParkingSpot
+}
+
+class EntryGate {
+    -ParkingLot parkingLot
+    +ParkVehicle(Vehicle)
+}
+
+class ExitGate {
+    -ParkingLot parkingLot
+    -BillingService billingService
+    +UnparkVehicle(int)
+}
+
+class BillingService {
+    +CalculateParkingFee(Ticket, DateTime)
+}
+
+class ISpotAllocationStrategy {
+    <<interface>>
+    +GetAvailableSpot(List~Floor~, Vehicle)
+}
+
+class SpotAllocationStrategy {
+    +GetAvailableSpot(List~Floor~, Vehicle)
+}
+
+ParkingLot --> Floor
+Floor --> ParkingSpot
+ParkingLot --> Ticket
+ParkingLot --> ISpotAllocationStrategy
+ISpotAllocationStrategy <|.. SpotAllocationStrategy
+EntryGate --> ParkingLot
+ExitGate --> ParkingLot
+ExitGate --> BillingService
+Ticket --> Vehicle
+Ticket --> ParkingSpot
+
+```
 
 ## 🔄 Flow
 
