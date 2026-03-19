@@ -6,12 +6,15 @@ public class Node
     private Node prev;
     private Node next;
 
-    public Node(int key, int value)
+    private DateTime expirationTime;
+
+    public Node(int key, int value, TimeSpan timeToLive)
     {
         this.key = key;
         this.value = value;
         this.prev = null;
         this.next = null;
+        this.expirationTime = DateTime.Now.Add(timeToLive);
     }
 
     public int GetKey()
@@ -46,5 +49,11 @@ public class Node
     public void SetValue(int value)
     {
         this.value = value; 
+    }
+
+    public bool IsExpired()
+    {
+        // Implement logic to check if the node has expired based on timeToLive
+        return DateTime.Now > expirationTime;
     }
 }

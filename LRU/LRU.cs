@@ -10,8 +10,8 @@ public class LRU
     {
         this.capacity = capacity;
         cache = new Dictionary<int, Node>();
-        head = new Node(0, 0);
-        tail = new Node(0, 0);
+        head = new Node(0, 0, TimeSpan.Zero);
+        tail = new Node(0, 0, TimeSpan.Zero);
         head.SetNext(tail);
         tail.SetPrev(head);
     }
@@ -21,14 +21,21 @@ public class LRU
         if (cache.ContainsKey(key))
         {
             Node node = cache[key];
+            if (node.IsExpired())
+            {
+                RemoveNode(node);
+                cache.Remove(key);
+                return -1;
+            }
             MoveToHead(node);
             return node.GetValue();
         }
         return -1;
     }
 
-    public void Put(int key, int value)
+    public void Put(int key, int value, TimeSpan timeToLive)
     {
+        RemoveExpiredNodes();
         if (cache.ContainsKey(key))
         {
             Node node = cache[key];
@@ -41,7 +48,7 @@ public class LRU
             {
                 RemoveTail();
             }
-            Node newNode = new Node(key, value);
+            Node newNode = new Node(key, value, timeToLive);
             cache[key] = newNode;
             AddToHead(newNode);
         }
@@ -83,5 +90,24 @@ public class LRU
             current = current.GetNext();
         }
         Console.WriteLine();
+    }
+
+    private void RemoveExpiredNodes()
+    {
+        Node current = head.GetNext();
+        while (current != tail)
+        {
+            if (current.IsExpired())
+            {
+                Node nextNode = current.GetNext();
+                RemoveNode(current);
+                cache.Remove(current.GetKey());
+                current = nextNode;
+            }
+            else
+            {
+                current = current.GetNext();
+            }
+        }
     }
 }
